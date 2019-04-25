@@ -1,0 +1,7 @@
+{{yield}}
+
+<input oninput={{action "changeValue"}} value={{this.changeset.city}} name="city">
+{{#if this.errorMessage}}
+  <div>Error: {{this.errorMessage}}</div>
+{{/if}}
+
